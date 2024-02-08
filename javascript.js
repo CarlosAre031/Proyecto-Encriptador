@@ -65,7 +65,7 @@ botonEncriptar.addEventListener( "click", e=>{
 botonDesencriptar.addEventListener( "click", e=>{
     e.preventDefault(); 
     let texto = texEncriptar.value;
-    let txt =texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
+    let txt =texto.normalize("NFD").replace(/[$\.¿\?~\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, " ");
     
     if(texto=="") {
         exclamacion.style.background = "#710a0a";
